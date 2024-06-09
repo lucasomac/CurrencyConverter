@@ -14,9 +14,14 @@
         android:theme="@style/Theme.CurrencyConverter"
         tools:targetApi="31">
         <service
+            android:name=".service.ConvertService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
             android:name=".service.CurrenciesServices"
             android:enabled="true"
             android:exported="false" />
+
         <activity
             android:name=".ui.MainActivity"
             android:exported="true">
